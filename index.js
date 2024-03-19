@@ -14,13 +14,13 @@ function playGame(playerChoice) {
   } else {
     switch (playerChoice) {
       case "rock ✊":
-        result = computerChoice === "scissors" ? "you won" : "you lost";
+        result = computerChoice === "scissors" ? "you lost" : "you won";
         break;
       case "paper 🤚":
-        result = computerChoice === "rock" ? "you won" : "you lost";
+        result = computerChoice === "rock" ? "you lost" : "you won";
         break;
       case "scissors ✌️":
-        result = computerChoice === "paper" ? "you won" : "you lost";
+        result = computerChoice === "paper" ? "you lost" : "you won";
         break;
     }
   }
