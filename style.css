@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    align-items: center;
+    text-align: center;
+    background-color: beige;
+}
+
+
+.choices {
+    margin-bottom: 30px;
+}
+
+.choices button {
+    font-size: 6rem;
+    min-width: 160px;
+    margin: 0px 10px;
+    border-radius: 250px;
+    background-color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.choices button:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+#playerDisplay,
+#computerDisplay {
+    font-size: 2.5rem;
+}
+
+#resultDisplay {
+    font-size: 5rem;
+    margin: 30px 0;
+    text-transform: uppercase;
+    border: 1px solid black;
+    padding: 50px 150px;
+    border-radius: 5%;
+}
+
+
+#score #computerCounter {
+    position: absolute;
+    right: 7%;
+    top: 75px;
+    border: 1px solid black;
+    padding: 25px;
+    border-radius: 5%;
+    background-color: red;
+    font-size: 2rem;
+}
+
+#score #playerCounter {
+    position: absolute;
+    left: 7%;
+    top: 75px;
+    border: 1px solid black;
+    padding: 25px;
+    border-radius: 5%;
+    background-color: green;
+    font-size: 2rem;
+}
+
+.greenText {
+    color: green;
+}
+
+.redText {
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .body {
+        margin-top: 150px;
+    }
+
+    .choices {
+        display: flex;
+        flex-direction: column;
+    }
+}
